@@ -39,7 +39,9 @@
     "com.unity.modules.xr": "1.0.0",
     "com.reactunity.core": "0.16.7",
     "com.reactunity.quickjs": "0.16.0",
-    "com.unity.render-pipelines.universal": "14.0.9"
+    "com.unity.render-pipelines.universal": "14.0.9",
+    "com.unity.entities": "1.2.0-exp.3",
+    "com.unity.entities.graphics": "1.2.0-pre.4"
   },
   "scopedRegistries": [
     {
