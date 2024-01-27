@@ -28,6 +28,21 @@ jobs:
           restore-keys: |
             Library-
 
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ./React/.nvmrc
+          cache-dependency-path: ./React/package-lock.json
+          cache: npm
+
+      - name: Install UI dependencies
+        working-directory: ./React
+        run: npm ci
+
+      - name: Build UI
+        working-directory: ./React
+        run: npm run build
+
       # Build
       - name: Build project
         id: build-game
